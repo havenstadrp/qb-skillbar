@@ -5,17 +5,14 @@ description 'QB-Skillbar'
 version '1.0.0'
 
 ui_page "html/index.html"
-
-client_scripts {
-    '@qb-core/shared.lua'
-    'client/main.lua',
-}
+shared_script '@qb-core/import.lua'
+client_script 'client/main.lua'
 
 files {
     'html/index.html',
     'html/script.js',
     'html/style.css',
-    'html/VerdanaBold.ttf',
+    'html/VerdanaBold.ttf'
 }
 
 exports {
