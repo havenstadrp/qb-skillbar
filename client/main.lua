@@ -1,3 +1,5 @@
+local QBCore = exports['qb-core']:GetCoreObject()
+
 Skillbar = {}
 Skillbar.Data = {}
 Skillbar.Data = {
@@ -57,7 +59,7 @@ Skillbar.Repeat = function(data)
             duration = Skillbar.Data.Data.duration,
             pos = Skillbar.Data.Data.pos,
             width = Skillbar.Data.Data.width,
-        }) 
+        })
     end)
 end
 
